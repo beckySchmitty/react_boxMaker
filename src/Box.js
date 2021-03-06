@@ -1,7 +1,10 @@
 import React from "react"
 
 
-const Box = ({handleClick, color, width, height}) => {
+const Box = ({id, handleRemove, color, width, height}) => {
+    const remove = () => {
+        handleRemove(id)
+    }
 
     return (
         <div 
@@ -10,7 +13,7 @@ const Box = ({handleClick, color, width, height}) => {
             width: `${width}px`,
             backgroundColor: `${color}`
           }}>
-        <button onClick={handleClick}>X</button>
+        <button onClick={remove}>X</button>
         </div>
     )
 }
