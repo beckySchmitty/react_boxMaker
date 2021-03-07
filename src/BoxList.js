@@ -6,11 +6,12 @@ import NewBoxForm from "./NewBoxForm";
 
 const BoxList = () => {
 
-    const initialState = [
-        {id: uuidv4(),height: '200', width: '300', color: 'red' },
-        { id: uuidv4(), height: '200', width: '300', color: 'blue' }
-    ]
-    const [boxes, setBoxes] = useState(initialState);
+    // const initialState = [
+    //     {id: uuidv4(),height: '200', width: '300', color: 'red' },
+    //     { id: uuidv4(), height: '200', width: '300', color: 'blue' }
+    // ]
+
+    const [boxes, setBoxes] = useState([]);
 
     const addBox = newBox => {
         setBoxes(boxes => [

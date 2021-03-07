@@ -25,11 +25,11 @@ it("should add new box", function () {
     const button = boxList.getByText("Add Box!");
     fireEvent.click(button);
 
-    const removeButton = boxList.getByText("X");
-    expect(removeButton).toBeInTheDocument();
-    expect(removeButton.previousSibling).toHaveStyle(`
-    width: 500em;
-    height: 500em;
+    const removeBtn = boxList.getByText("X");
+    expect(removeBtn).toBeInTheDocument();
+    expect(removeBtn.previousSibling).toHaveStyle(`
+    width: 500px;
+    height: 500px;
     background-color: blue;
   `);
 
